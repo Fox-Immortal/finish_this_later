@@ -1,2 +1,3 @@
-# finish_this_later
-I will finish this later
+# Project 0
+
+Web Programming with Python and JavaScript
