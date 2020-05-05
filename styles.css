@@ -38,14 +38,17 @@ table th, td {
   text-align: center;
   border: 3px solid black;
 }
-.forms {
-  height: 200px;
-  margin-left: 10px;
-  width: 50%;
-}
-.form_1 {
-  background: blue;
-}
-.form_2 {
-  background-color: red;
+
+@media (max-width:600px) {
+    table {
+      background-color: #6666aa
+    }
+    td, th {
+      background-color: red;
+      font-size: 0.9rem;
+      padding: 1px;
+    }
+    th {
+      font-weight: normal;
+    }
 }
