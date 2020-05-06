@@ -1,1 +1,65 @@
 $color: #666666;
+
+body {
+  background-color: #eeeeee;
+  font-family: arial;
+}
+
+.list {
+  background-color: $color;
+  height: 100px;
+	box-sizing: content-box;
+	::after {
+		box-sizing: content-box;
+	}
+	::before {
+		box-sizing: content-box;
+	}
+	ul {
+		list-style: none;
+		display: inline-flex;
+		padding: 0;
+		padding-left: 10px;
+		li {
+			margin-right: 10px;
+		  height: 30px;
+		  font-size: 1.7rem;
+		  text-align: left;
+		  padding: 5px;
+		  background-color: #999999;
+		  border-radius: 10%;
+			:hover {
+					background-color: #665544;
+			}
+			a {
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.cell {
+	font-size: 1.1rem;
+  padding: 5px;
+  text-align: center;
+  border: 3px solid black;
+}
+table {
+	@extend .cell ;
+	th {
+			background-color: #555555;
+	}
+	td {
+			background-color: #dddddd;
+	}
+}
+
+@media (max-width:600px) {
+    td, th {
+      font-size: 0.9rem;
+      padding: 1px;
+    }
+    th {
+      font-weight: normal;
+    }
+}

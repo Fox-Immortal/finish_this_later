@@ -1,14 +1,17 @@
 body {
-
   background-color: #eeeeee;
   font-family: arial;
 }
 
 .list {
-  background-color: $color;
+  background-color: #666666;
   height: 100px;
+  box-sizing: content-box;
 }
-.list, .list::after, .list::before {
+.list ::after {
+  box-sizing: content-box;
+}
+.list ::before {
   box-sizing: content-box;
 }
 .list ul {
@@ -26,30 +29,37 @@ body {
   background-color: #999999;
   border-radius: 10%;
 }
-.list ul li:hover {
+.list ul li :hover {
   background-color: #665544;
 }
 .list ul li a {
   color: white;
   text-decoration: none;
 }
-table th, td {
+
+.cell, table {
   font-size: 1.1rem;
   padding: 5px;
   text-align: center;
   border: 3px solid black;
 }
 
-@media (max-width:600px) {
-    table {
-      background-color: #6666aa
-    }
-    td, th {
-      background-color: red;
-      font-size: 0.9rem;
-      padding: 1px;
-    }
-    th {
-      font-weight: normal;
-    }
+table th {
+  background-color: #555555;
 }
+table td {
+  background-color: #dddddd;
+}
+
+@media (max-width: 600px) {
+  td, th {
+    font-size: 0.9rem;
+    padding: 1px;
+  }
+
+  th {
+    font-weight: normal;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
